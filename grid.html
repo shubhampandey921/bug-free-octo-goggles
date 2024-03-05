@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid boxes</title>
+</head>
+<style>
+    .container {
+        border: 2px solid black;
+        height: 944px;
+        width: 700px;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 15px;
+        grid-template-columns: 200px 200px;
+    }
+
+    .box {
+        border: 2px solid red;
+        height: 120px;
+        width: 120px;
+        margin: 5px;
+        }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">1</div>
+        <div class="box" id="box-2">2</div>
+        <div class="box" id="box-3">3</div>
+        <div class="box" id="box-4">4</div>
+        <div class="box" id="box-5">5</div>
+        <div class="box" id="box-6">6</div>
+    </div>
+</body>
+
+</html>

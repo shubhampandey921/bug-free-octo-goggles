@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<style>
+    body {
+        background-color: red;
+    }
+    @media screen and (max-width: 340px) {
+          body{
+            background-color: blue;
+          }
+        }
+    .box {
+        height: 344px;
+        width: 344px;
+        margin: 20px;
+        padding: 20px;
+        background-color: steelblue;
+    }
+    .boxes{
+        display: flex;
+        @media screen and (max-width: 340px) {
+            flex-direction: column;
+            
+        }
+    }
+</style>
+
+<body>
+   <div class="boxes"> 
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</body>
+
+</html>
